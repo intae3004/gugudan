@@ -1,0 +1,40 @@
+CAT레이저 타워.2
+의사가 임의로 서보 타워(X축과 Y축)를 이동하여 레이저를 켭니다.
+
+작동하는 것을 보세요httpswww.youtube.comwatchv=hHIrxL0giJQ
+
+세우다
+x_servo는 핀 9(및+5V및 GND)에 연결되고 X계획으로 이동합니다.
+
+y_servo는 핀 6(및+5V및 GND)에 연결되어 Y계획으로 이동합니다.
+
+레이저는 핀 13(및 GND)에 부착됩니다.
+
+.ino파일을 다운로드하여 arduino소프트웨어 내에서 열고 arduino로 전송합니다.
+
+작동 방식
+프로그램은 변수에 정의할 수 있는 정사각형 안에서 레이저의 새 위치를 임의로 선택합니다. 새 위치가 최소최소_이동의 이전 위치와 다른지 확인합니다. 이것은 탑을 새로운 위치로 옮기고 min_freeze와 max_freeze사이에 잠시 동안 가만히 있는다. 이것은 어딘가에 곤충이 착륙하는 행동을 재현하고 난 후 날아가는 것을 목표로 한다. 이것은 고양이가 뚱뚱하면 증가해야 할 변수이다. Ans는 그 과정을 계속해서 시작한다.
+
+LaFabriqueDIY를 위해 2016년 9월 30일에 LucasBerbesson에 의해 제작되었습니다
+
+
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B0015D38-5EEB-4519-15E7-8B7B0B79F7AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0015D38-5EEB-4519-15E7-8B7B0B79F7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0015D38-5EEB-4519-15E7-8B7B0B79F7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0015D38-5EEB-4519-15E7-8B7B0B79F7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0015D38-5EEB-4519-15E7-8B7B0B79F7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
